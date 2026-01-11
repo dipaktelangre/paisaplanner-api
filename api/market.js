@@ -21,7 +21,7 @@ router.get('/sensex', cors(), bodyParser.json(), (req, res) => {
                 index: 'Sensex',
                 currentPrice: response.data.C,
                 change: response.data.CZ,
-                percentChange: response.data.CZG
+                changePercent: response.data.CZG
             };
             res.json(sensexData);
         })
@@ -41,7 +41,7 @@ router.get('/nifty', cors(), bodyParser.json(), (req, res) => {
                 index: 'Nifty',
                 currentPrice: response.data.C,
                 change: response.data.CZ,
-                percentChange: response.data.CZG
+                changePercent: response.data.CZG
             };
             res.json(niftyData);
         })
