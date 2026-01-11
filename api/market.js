@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const router = express.Router();
 const axios = require('axios');
 const memoryCache = require('memory-cache');
-const CACHE_TTL = 30 * 60 * 1000; // Cache for 30 minutes
+const CACHE_TTL = 120 * 60 * 1000; // Cache for 120 minutes
 
 router.get('/', (req, res) => {
     res.json({ status: 'OK', message: 'API is running smoothly.' });
